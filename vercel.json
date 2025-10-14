@@ -2,22 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "poem_demo/demo/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/poem_demo/demo/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/poem_demo/demo/index.html",
-      "status": 200
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
