@@ -1,0 +1,39 @@
+0 verbose cli D:\program\nodejs\node.exe D:\program\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.0
+2 info using node@v24.8.0
+3 silly config load:file:D:\program\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\demo\html_demo_2\.npm-packages\.npmrc
+5 silly config load:file:C:\Users\86187\.npmrc
+6 silly config load:file:D:\demo\html_demo_2\.npm-packages\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache" "--prefix" ".npm-packages"
+9 verbose logfile logs-max:10 dir:D:\demo\html_demo_2\.npm-cache\_logs\2025-10-14T01_03_16_399Z-
+10 verbose logfile D:\demo\html_demo_2\.npm-cache\_logs\2025-10-14T01_03_16_399Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open 'D:\demo\html_demo_2\.npm-packages\package.json'
+15 verbose stack     at async open (node:internal/fs/promises:642:25)
+15 verbose stack     at async readFile (node:internal/fs/promises:1279:14)
+15 verbose stack     at async read (D:\program\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\read-package.js:9:18)
+15 verbose stack     at async PackageJson.load (D:\program\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:132:31)
+15 verbose stack     at async PackageJson.normalize (D:\program\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:118:5)
+15 verbose stack     at async runScript (D:\program\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:11:28)
+15 verbose stack     at async Install.exec (D:\program\nodejs\node_modules\npm\lib\commands\install.js:163:9)
+15 verbose stack     at async Npm.exec (D:\program\nodejs\node_modules\npm\lib\npm.js:208:9)
+15 verbose stack     at async module.exports (D:\program\nodejs\node_modules\npm\lib\cli\entry.js:67:5)
+16 error code ENOENT
+17 error syscall open
+18 error path D:\demo\html_demo_2\.npm-packages\package.json
+19 error errno -4058
+20 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'D:\demo\html_demo_2\.npm-packages\package.json'
+21 error enoent This is related to npm not being able to find a file.
+21 error enoent
+22 verbose cwd D:\demo\html_demo_2
+23 verbose os Windows_NT 10.0.26100
+24 verbose node v24.8.0
+25 verbose npm  v11.6.0
+26 verbose exit -4058
+27 verbose code -4058
+28 error A complete log of this run can be found in: D:\demo\html_demo_2\.npm-cache\_logs\2025-10-14T01_03_16_399Z-debug-0.log
