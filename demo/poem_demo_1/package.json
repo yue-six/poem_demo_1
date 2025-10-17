@@ -1,0 +1,10 @@
+{
+  "name": "poem-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cd demo && npm run dev",
+    "build": "cd demo && npm run build && robocopy dist .. /E",
+    "preview": "cd demo && npm run preview"
+  }
+}
